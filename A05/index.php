@@ -63,6 +63,7 @@
     <title>My Island of Personality</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A03-SAM-Poj-Compiler/icon-black.png">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
@@ -303,21 +304,6 @@
               echo '</div>';
               echo '</div>';
               ?>
-              <!--div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/entertainment/entertainmet1.jpg" class="img-fluid" alt="Movies">
-                  <h3>Movies</h3>
-                  <p>Watching classic films, new releases, and cinematic masterpieces, whether solo or with friends, and appreciating the art of storytelling through movies.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/entertainment/entertainmet2.jpg" class="img-fluid" alt="TV Shows">
-                  <h3>TV Shows</h3>
-                  <p>Diving into binge-worthy TV series, following ongoing seasons, and discussing the latest episodes and character arcs with fellow fans.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/entertainment/entertainmet3.jpg" class="img-fluid" alt="Anime">
-                  <h3>Anime</h3>
-                  <p>Diving into the colorful world of anime, exploring iconic series, and following captivating characters and unique storylines.</p>
-              </div-->
           </div>
       </div>
   </div>
