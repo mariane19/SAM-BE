@@ -8,7 +8,7 @@
     $personalities[] = $row;
   }
 
-  $titles = ['Family', 'Friends', 'Beloved'];
+  $lovingTitles = ['Family', 'Friends', 'Beloved'];
   $query = "SELECT image, content FROM islandcontents WHERE islandOfPersonalityID = 1";
   $result = executeQuery($query);
 
@@ -20,7 +20,7 @@
       ];
   }
 
-  //$titles = ['Thrill-Seeking Escapades', 'Cultural Explorations', 'Adventurous Challenges'];
+  $adventurousTitles = ['Thrill-Seeking Escapades', 'Cultural Explorations', 'Adventurous Challenges'];
   $query = "SELECT image, content FROM islandcontents WHERE islandOfPersonalityID = 2";
   $result = executeQuery($query);
 
@@ -32,7 +32,7 @@
       ];
   }
 
-  //$titles = ['Culinary Adventures', 'Creative Cooking', 'Food Photography and Blogging'];
+  $foodieTitles = ['Culinary Adventures', 'Creative Cooking', 'Food Photography and Blogging'];
   $query = "SELECT image, content FROM islandcontents WHERE islandOfPersonalityID = 3";
   $result = executeQuery($query);
 
@@ -44,7 +44,7 @@
       ];
   }
 
-  //$titles = ['Movies', 'TV Shows', 'Anime'];
+  $entertainmentTitles = ['Movies', 'TV Shows', 'Anime'];
   $query = "SELECT image, content FROM islandcontents WHERE islandOfPersonalityID = 4";
   $result = executeQuery($query);
 
@@ -225,8 +225,8 @@
               
               foreach ($lovingContent as $index => $content) {
                   echo '<div class="col-lg-4 col-md-6 mb-4">';
-                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $titles[$index] . '">';
-                  echo '<h3>' . $titles[$index] . '</h3>'; 
+                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $lovingTitles[$index] . '">';
+                  echo '<h3>' . $lovingTitles[$index] . '</h3>'; 
                   echo '<p>' . $content['description'] . '</p>';
                   echo '</div>';
               }
@@ -248,8 +248,8 @@
               
               foreach ($adventurousContent as $index => $content) {
                   echo '<div class="col-lg-4 col-md-6 mb-4">';
-                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $titles[$index] . '">';
-                  echo '<h3>' . $titles[$index] . '</h3>'; 
+                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $adventurousTitles[$index] . '">';
+                  echo '<h3>' . $adventurousTitles[$index] . '</h3>'; 
                   echo '<p>' . $content['description'] . '</p>';
                   echo '</div>';
               }
@@ -257,21 +257,6 @@
               echo '</div>';
               echo '</div>';
               ?>
-              <!--div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/adventurous/hiking.jpg" class="img-fluid" alt="Thrill-Seeking Escapades">
-                  <h3>Thrill-Seeking Escapades</h3>
-                  <p>Hiking on breathtaking trails, zip-lining through forests, or exploring hidden caves—your love for thrilling outdoor activities defines your adventurous spirit.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/adventurous/adventurous2.jpeg" class="img-fluid" alt="Cultural Explorations">
-                  <h3>Cultural Explorations</h3>
-                  <p>Traveling to new destinations to experience diverse cultures, cuisines, and traditions feeds your curiosity and broadens your horizons.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/adventurous/adventurous3.jpg" class="img-fluid" alt="Adventurous Challenges">
-                  <h3>Adventurous Challenges</h3>
-                  <p>Whether it's facing a fear of heights or trying an extreme sport, you embrace challenges as opportunities to grow and discover your limits.</p>
-              </div-->
           </div>
       </div>
   
@@ -286,8 +271,8 @@
               
               foreach ($foodieContent as $index => $content) {
                   echo '<div class="col-lg-4 col-md-6 mb-4">';
-                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $titles[$index] . '">';
-                  echo '<h3>' . $titles[$index] . '</h3>'; 
+                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $foodieTitles[$index] . '">';
+                  echo '<h3>' . $foodieTitles[$index] . '</h3>'; 
                   echo '<p>' . $content['description'] . '</p>';
                   echo '</div>';
               }
@@ -295,21 +280,6 @@
               echo '</div>';
               echo '</div>';
               ?>
-              <!--div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/foodie/foodie1.jpg" class="img-fluid" alt="Culinary Adventures">
-                  <h3>Culinary Adventures</h3>
-                  <p>Exploring diverse cuisines, from street food to fine dining, and always being on the lookout for the next unique flavor experience.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/foodie/foodie2.jpg" class="img-fluid" alt="Creative Cooking">
-                  <h3>Creative Cooking</h3>
-                  <p>Experimenting in the kitchen with new recipes, fusion dishes, or baking creations that bring joy to you and those you share them with.</p>
-              </div>
-              <div class="col-lg-4 col-md-6 mb-4">
-                  <img src="https://raw.githubusercontent.com/mariane19/images/refs/heads/main/A05-img/foodie/foodie3.jpg" class="img-fluid" alt="Food Photography and Blogging">
-                  <h3>Food Photography and Blogging</h3>
-                  <p>Capturing the beauty of plated dishes and sharing your food journeys through vibrant photos, blogs, or social media posts.</p>
-              </div-->
           </div>
       </div>
   
@@ -324,8 +294,8 @@
               
               foreach ($entertainmentContent as $index => $content) {
                   echo '<div class="col-lg-4 col-md-6 mb-4">';
-                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $titles[$index] . '">';
-                  echo '<h3>' . $titles[$index] . '</h3>'; 
+                  echo '<img src="' . $content['image'] . '" class="img-fluid" alt="' . $entertainmentTitles[$index] . '">';
+                  echo '<h3>' . $entertainmentTitles[$index] . '</h3>'; 
                   echo '<p>' . $content['description'] . '</p>';
                   echo '</div>';
               }
