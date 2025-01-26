@@ -372,67 +372,31 @@ section {
       bottom: 0;
       background: #ee1e46; }
 /*--------------------------------------------------------------
-# Team
+# Future
 --------------------------------------------------------------*/
-.team {
+.future {
   background: #fff;
   padding: 60px 0;
 }
 
-.team .member {
+.future .member {
   margin-bottom: 20px;
   overflow: hidden;
 }
 
-.team .member .member-img {
+.future .member .member-img {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
 }
 
-.team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: -40px;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: bottom ease-in-out 0.4s;
-  background: rgba(124, 197, 118, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a {
-  transition: color 0.3s;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.team .member .social a i {
-  line-height: 0;
-}
-
-.team .member .social a:hover {
-  color: #fff;
-}
-
-.team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
-
-.team .member .member-info h4 {
+.future .member .member-info h4 {
   font-weight: 700;
   margin: 15px 0 5px 0;
   font-size: 18px;
 }
 
-.team .member .member-info span {
+.future .member .member-info span {
   display: block;
   font-size: 13px;
   text-transform: uppercase;
@@ -441,9 +405,58 @@ section {
   color: #7cc576;
 }
 
-.team .member .member-info p {
+.future .member .member-info p {
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
   color: #888888;
+}
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history ul li {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.history ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.history .read-more {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.history .read-more:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.history .read-more:hover i {
+  transform: translate(5px, 0);
 }
